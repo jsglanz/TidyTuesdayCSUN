@@ -45,7 +45,7 @@ datreg <- dplyr::right_join(jointsum, region) %>%
 View(datreg)
 datreg<-datreg[,-3] #remove the sums rows from earlier since we only need the proportion data
 
-dat_wide<- spread(datreg,industry_sector,prop) #converts dataframe from long to wide
+dat_wide<- spread(datreg,industry_sector,prop) #converts dataframe from long to wide, important for mapping pie charts
 View(dat_wide)
 
 dat_wide[is.na(dat_wide)] <- 0 #turns all NA's into 0's
