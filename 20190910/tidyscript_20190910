@@ -68,7 +68,7 @@ print(p1)
 p2 <- p1 +
   # The original value is r = sqrt(total)/2000, but the pie charts are smaller,
   # the lower number of the denominator, the bigger the pie chart
-  # the numerator in r makes the radius of the pie chart relative to the total number of recreational injuries in each entire state
+  # the numerator in r makes the radius of the pie chart relative to the total number of recreational injuries in each state
   geom_scatterpie(aes(x = lon, y = lat, group = acc_state, r = sqrt(totinj)/20), 
                   data = dat_wide,
                   cols = c("amusement ride", "recreation", "unknown","water park"),
