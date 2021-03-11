@@ -48,8 +48,6 @@ jointsub$prop<-(jointsub$visitors/jointsub$pop)
 
 #Plot proportion of state population visiting national parks by type, region, and across years
 library(ggpubr)
-par(oma=c(5,5,5,5)) # all sides have 3 lines of space
-par(mar=c(5,4,4,2) + 0.1)
 p<-ggscatter(jointsub, x = "year", y = "prop", 
          shape= "region",color="park_type", 
           xlab = "Year", ylab = "Proportion of State Population Visiting National Parks",palette=c("#E69F00","#009E73","#56B4E9"), repel=TRUE)+
