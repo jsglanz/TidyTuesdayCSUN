@@ -1,4 +1,4 @@
-# TidyTuesdayCSUN
+# ![](Mar_Biol_logo_SM.webp)TidyTuesdayCSUN
 
 Peer coding group to help people work on their data wrangling and plotting skills and to create a supportive and low stress environment for working on coding issues together.
 
